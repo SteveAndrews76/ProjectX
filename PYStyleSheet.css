@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+#Wrapper {
+	width: 1300px;
+	margin: auto;
+}
+#Header {
+	text-align: center;
+	width: 1300px;
+}
+
+#Map {
+	float: left;
+	width: 1050px;
+	height: 500px;
+	text-align: center;
+}
+#InfoBar {
+	float: right;
+	width: 249px;
+}
