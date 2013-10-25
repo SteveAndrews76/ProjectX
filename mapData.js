@@ -11,7 +11,7 @@ var BuildG=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildH=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildJ=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildK=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildL=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildL=new google.maps.LatLng(-37.97473488345525,145.2194631099701);
 var BuildM=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildN=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildO=new google.maps.LatLng(-37.97415,145.2175491231842);
@@ -21,8 +21,8 @@ var BuildR=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildS=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildT=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildU=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildV=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildW=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildV=new google.maps.LatLng(-37.974717968753204,145.21843314170837);
+var BuildW=new google.maps.LatLng(-37.97438813128418,145.21743535995483);
 var BuildY=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildZ=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildPt1=new google.maps.LatLng(-37.97415,145.2175491231842);
@@ -73,6 +73,37 @@ function initialize()
 	  });	  
 	// event listener so that pop up bubble appears when marker is clicked
 	
+	//Building L
+	var markerL=new google.maps.Marker({
+	  position:BuildL,
+	  });
+	 
+	 markerL.setMap(map);
+	 
+	 var infowindowL = new google.maps.InfoWindow({
+	  content:"Building L",
+	  });
+	  
+	  google.maps.event.addListener(markerL, 'click', function() {
+	  infowindowL.open(map,markerL);
+	  });
+	
+	//Building V
+	var markerV=new google.maps.Marker({
+	  position:BuildV,
+	  });
+	 
+	 markerV.setMap(map);
+	 
+	 var infowindowV = new google.maps.InfoWindow({
+	  content:"Building V",
+	  });
+	  
+	  google.maps.event.addListener(markerV, 'click', function() {
+	  infowindowV.open(map,markerV);
+	  });
+	
+	//Building W
 	var markerW=new google.maps.Marker({
 	  position:BuildW,
 	  });
