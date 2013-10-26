@@ -35,7 +35,7 @@ function initialize()
 {
 	var imageBounds = new google.maps.LatLngBounds(
       new google.maps.LatLng(-37.97668856261104, 145.21637320518494),
-      new google.maps.LatLng(-37.9740004626132, 145.2226710319519));
+      new google.maps.LatLng(-37.97396526056601, 145.22268176078796));
 	  //Bottom Left corner Co-ordinates are first. the Top Right Co-ordinates are second.
 
 	
