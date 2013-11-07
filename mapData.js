@@ -1,12 +1,12 @@
 // JavaScript Document
 var myCenter=new google.maps.LatLng(-37.97512392052657,145.2195382118225);
-var BuildA=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildB=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildC=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildA=new google.maps.LatLng(-37.97563135708604,145.2215874195099);
+var BuildB=new google.maps.LatLng(-37.976020389405896,145.22093296051025);
+var BuildC=new google.maps.LatLng(-37.97511546322086,145.22116899490356);
 var BuildD=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildE=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildF=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildG=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildG=new google.maps.LatLng(-37.9761049613765,145.22192001342773);
 var BuildH=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildJ=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildK=new google.maps.LatLng(-37.97415,145.2175491231842);
@@ -14,7 +14,7 @@ var BuildL=new google.maps.LatLng(-37.97473488345525,145.2194631099701);
 var BuildM=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildN=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildO=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildP=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildP=new google.maps.LatLng(-37.9753099810057,145.22210240364075);
 var BuildQ=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildR=new google.maps.LatLng(-37.97415,145.2175491231842);
 var BuildS=new google.maps.LatLng(-37.97415,145.2175491231842);
@@ -70,6 +70,74 @@ function initialize()
 	});
 	// event listener so that pop up bubble appears when marker is clicked
 	
+	//Building A
+
+	var markerA=new google.maps.Marker({
+		position:BuildA,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerA.setMap(map);
+	
+	var infowindowA = new google.maps.InfoWindow({
+		content:"Building A",
+	});
+	
+	google.maps.event.addListener(markerA, 'click', function() {
+		infowindowA.open(map,markerL);
+	});
+	
+	//Building B
+
+	var markerB=new google.maps.Marker({
+		position:BuildB,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerB.setMap(map);
+	
+	var infowindowB = new google.maps.InfoWindow({
+		content:"Building B",
+	});
+	
+	google.maps.event.addListener(markerB, 'click', function() {
+		infowindowB.open(map,markerB);
+	});
+	
+	//Building C
+
+	var markerC=new google.maps.Marker({
+		position:BuildC,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerC.setMap(map);
+	
+	var infowindowC = new google.maps.InfoWindow({
+		content:"Building C",
+	});
+	
+	google.maps.event.addListener(markerC, 'click', function() {
+		infowindowC.open(map,markerC);
+	});
+
+	//Building G
+
+	var markerG=new google.maps.Marker({
+		position:BuildG,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerG.setMap(map);
+	
+	var infowindowG = new google.maps.InfoWindow({
+		content:"Building G",
+	});
+	
+	google.maps.event.addListener(markerG, 'click', function() {
+		infowindowG.open(map,markerG);
+	});
+	
 	//Building L
 	var markerL=new google.maps.Marker({
 		position:BuildL,
@@ -86,10 +154,27 @@ function initialize()
 		infowindowL.open(map,markerL);
 	});
 	
+	//Building P
+
+	var markerP=new google.maps.Marker({
+		position:BuildP,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerP.setMap(map);
+	
+	var infowindowP = new google.maps.InfoWindow({
+		content:"Building P",
+	});
+	
+	google.maps.event.addListener(markerP, 'click', function() {
+		infowindowP.open(map,markerP);
+	});
+	
 	//Building V
 	var markerV=new google.maps.Marker({
 		position:BuildV,
-		animation: google.maps.Animation.BOUNCE,
+		animation: google.maps.Animation.DROP,
 	});
 	
 	markerV.setMap(map);
@@ -105,7 +190,7 @@ function initialize()
 	//Building W
 	var markerW=new google.maps.Marker({
 		position:BuildW,
-		animation: google.maps.Animation.BOUNCE,
+		animation: google.maps.Animation.DROP,
 	});
 	
 	markerW.setMap(map);
