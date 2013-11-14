@@ -78,8 +78,10 @@ function initialize()
 	markerA.setMap(map);
 	
 	var infowindowA = new google.maps.InfoWindow({
-		content:"Building A"
+		content: "<div class=\"infobox\">Building A</div>",
 	});
+	
+	infowindowA.close(map,markerA);
 	
 	google.maps.event.addListener(markerA, 'click', function() {
 		infowindowA.open(map,markerA);
