@@ -18,4 +18,13 @@
 #InfoBar {
 	float: right;
 	width: 249px;
+	font-family:Verdana, Geneva, sans-serif;
+	
 }
+#mapKey {
+	float:right;
+	width:249px;
+}
+
+
+
