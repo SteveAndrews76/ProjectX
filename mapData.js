@@ -1,40 +1,39 @@
 // JavaScript Document
 var myCenter=new google.maps.LatLng(-37.97512392052657,145.2195382118225);
-var BuildA=new google.maps.LatLng(-37.97563135708604,145.2215874195099);
-var BuildB=new google.maps.LatLng(-37.976020389405896,145.22093296051025);
-var BuildC=new google.maps.LatLng(-37.97511546322086,145.22116899490356);
-var BuildD=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildE=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildF=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildG=new google.maps.LatLng(-37.9761049613765,145.22192001342773);
-var BuildH=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildJ=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildK=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildL=new google.maps.LatLng(-37.97473488345525,145.2194631099701);
-var BuildM=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildN=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildO=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildP=new google.maps.LatLng(-37.9753099810057,145.22210240364075);
-var BuildQ=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildR=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildS=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildT=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildU=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildV=new google.maps.LatLng(-37.974717968753204,145.21843314170837);
-var BuildW=new google.maps.LatLng(-37.97438813128418,145.21743535995483);
-var BuildY=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildZ=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildPt1=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildPt2=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildPt3=new google.maps.LatLng(-37.97415,145.2175491231842);
-var BuildPt4=new google.maps.LatLng(-37.97415,145.2175491231842);
+var BuildA=new google.maps.LatLng(-37.97555312751185,145.22160351276398);
+var BuildB=new google.maps.LatLng(-37.9758597023933,145.2209436893463);
+var BuildC=new google.maps.LatLng(-37.97509854860651,145.22115290164948);
+var BuildD=new google.maps.LatLng(-37.975449526055534,145.2207425236702);
+var BuildE=new google.maps.LatLng(-37.97494843123337,145.22068351507187);
+var BuildF=new google.maps.LatLng(-37.975764558601604,145.22041529417038);
+var BuildG=new google.maps.LatLng(-37.975961188968505,145.22180199623108);
+var BuildH=new google.maps.LatLng(-37.976003475000084,145.21999955177307);
+var BuildJ=new google.maps.LatLng(-37.97515352108889,145.22020876407623);
+var BuildK=new google.maps.LatLng(-37.9754156969769,145.21946847438812);
+var BuildL=new google.maps.LatLng(-37.97466722462367,145.21931290626526);
+var BuildM=new google.maps.LatLng(-37.97562712846254,145.2186155319214);
+var BuildN=new google.maps.LatLng(-37.97597810338406,145.21961331367493);
+var BuildO=new google.maps.LatLng(-37.97619376184075,145.22030800580978);
+var BuildP=new google.maps.LatLng(-37.975208493530104,145.2220782637596);
+var BuildQ=new google.maps.LatLng(-37.97438813128418,145.22109925746918);
+var BuildR=new google.maps.LatLng(-37.9750858626432,145.21703839302063);
+var BuildS=new google.maps.LatLng(-37.975178892989945,145.2178055047989);
+var BuildT=new google.maps.LatLng(-37.97521695082509,145.21816492080688);
+var BuildU=new google.maps.LatLng(-37.97473065478011,145.2199673652649);
+var BuildV=new google.maps.LatLng(-37.97461648045906,145.21842777729034);
+var BuildW=new google.maps.LatLng(-37.97439235997906,145.21745681762695);
+var BuildY=new google.maps.LatLng(-37.975035118768,145.21964013576508);
+var BuildPt1=new google.maps.LatLng(-37.97563981433231,145.21886229515076);
+var BuildPt2=new google.maps.LatLng(-37.97563981433231,145.21900713443756);
+var BuildPt3=new google.maps.LatLng(-37.97565250019989,145.21915197372437);
+var BuildPt4=new google.maps.LatLng(-37.97504357608296,145.22158473730087);
 var ChisholmDandenong;
 
 function initialize()
 {
 	var imageBounds = new google.maps.LatLngBounds(
-		new google.maps.LatLng(-37.97668856261104, 145.21637320518494),
-		new google.maps.LatLng(-37.97396526056601, 145.22268176078796));
+		new google.maps.LatLng(-37.976477076889466, 145.21638929843903),
+		new google.maps.LatLng(-37.973999090313114, 145.22266030311584));
 		//Bottom Left corner Co-ordinates are first. the Top Right Co-ordinates are second.
 
 	
