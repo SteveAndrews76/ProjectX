@@ -51,7 +51,7 @@ function initialize()
 	ChisholmDandenong.setMap(map);
 	// Adding the campus overlay
   
-	var markerDand=new google.maps.Marker({
+	/*var markerDand=new google.maps.Marker({
 		animation: google.maps.Animation.DROP,
 		position:myCenter
 	});
@@ -68,7 +68,7 @@ function initialize()
 		infowindow.open(map,markerDand);
 	});
 	// event listener so that pop up bubble appears when marker is clicked
-	
+	*/
 	//Building A
 	var markerA=new google.maps.Marker({
 		position:BuildA,
@@ -419,22 +419,6 @@ function initialize()
 	
 	google.maps.event.addListener(markerW, 'click', function() {
 		infowindowW.open(map,markerW);
-	});
-	
-	// Building X
-	var markerX=new google.maps.Marker({
-		position:BuildX,
-		animation: google.maps.Animation.DROP,
-	});
-	
-	markerX.setMap(map);
-	
-	var infowindowX = new google.maps.InfoWindow({
-		content:"Building X",
-	});
-	
-	google.maps.event.addListener(markerX, 'click', function() {
-		infowindowW.open(map,markerX);
 	});
 	
 	//Building Y
