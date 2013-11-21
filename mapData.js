@@ -50,6 +50,8 @@ function initialize()
   
 	ChisholmDandenong = new google.maps.GroundOverlay('DandenongLayout2.png', imageBounds);
 	ChisholmDandenong.setMap(map);
+	
+	
 	// Adding the campus overlay
   
 	/*var markerDand=new google.maps.Marker({
@@ -70,6 +72,8 @@ function initialize()
 	});
 	// event listener so that pop up bubble appears when marker is clicked
 	*/
+	
+	
 	//Building A
 	var markerA=new google.maps.Marker({
 		position:BuildA,

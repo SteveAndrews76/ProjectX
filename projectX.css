@@ -31,3 +31,7 @@
 #MapLegend {
 	float: left;
 }
+
+body {
+	background-image:url(blue_bg.jpg);
+}
