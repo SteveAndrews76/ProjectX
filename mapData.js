@@ -23,7 +23,7 @@ var BuildU=new google.maps.LatLng(-37.97473065478011,145.2199673652649);
 var BuildV=new google.maps.LatLng(-37.97461648045906,145.21842777729034);
 var BuildW=new google.maps.LatLng(-37.97439235997906,145.21745681762695);
 var BuildY=new google.maps.LatLng(-37.975035118768,145.21964013576508);
-var BuildZ=new google.maps.LatLng(-37.975035118768,145.21964013576508);
+var BuildZ=new google.maps.LatLng(-37.97530152372143,145.2213567495346);
 var BuildPT1=new google.maps.LatLng(-37.97563981433231,145.21886229515076);
 var BuildPT2=new google.maps.LatLng(-37.97563981433231,145.21900713443756);
 var BuildPT3=new google.maps.LatLng(-37.97565250019989,145.21915197372437);
@@ -438,6 +438,22 @@ function initialize()
 	
 	google.maps.event.addListener(markerY, 'click', function() {
 		infowindowY.open(map,markerY);
+	});
+	
+	//Building Z
+	var markerZ=new google.maps.Marker({
+		position:BuildZ,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markerZ.setMap(map);
+	
+	var infowindowZ = new google.maps.InfoWindow({
+		content:"Building Z"
+	});
+	
+	google.maps.event.addListener(markerZ, 'click', function() {
+		infowindowB.open(map,markerZ);
 	});
 	
 	//Building PT1
