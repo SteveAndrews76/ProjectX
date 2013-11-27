@@ -14,7 +14,7 @@ var BuildM=new google.maps.LatLng(-37.97562712846254,145.2186155319214);
 
 function BuildAM()
 {
-
+	
 	//Building A
 	var markerA=new google.maps.Marker({
 		position:BuildA,
