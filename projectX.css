@@ -1,14 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 #Wrapper {
-	width: 1300px;
+	width: 1320px;
 	margin: auto;
 }
 #Header {
 	text-align: center;
-	width: 1300px;
+	width: 1320px;
 }
-
 #Map {
 	float: left;
 	width: 1050px;
@@ -17,19 +16,18 @@
 }
 #accordion {
 	float: right;
-	width: 246px;	
+	width: 250px;	
 }
 #mapKey {
 	float:right;
 	width:249px;
 }
-
-
-
 #MapLegend {
 	float: left;
 }
-
 body {
 	background-image:url(blue_bg.jpg);
+}
+.infobox {
+	width:100px;
 }

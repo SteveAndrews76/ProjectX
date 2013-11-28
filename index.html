@@ -20,17 +20,20 @@
             </div>
 			
             <div id="accordion">
-				<h3>This will selection of the types of markers displayed</h3>
+				<h3>Select buildings from A-M</h3>
                 <div>
-                	<p>This section should expand on click</p>
+                	<input onclick="showFirstMarkers();" type="button" value="Show Markers A-M" />
+                    <input onclick="clearFirstMarkers();" type="button" value="Hide Markers A-M" />
                 </div>
-                <h3>Blah Blah</h3>
+                <h3>Select buildings from M-Z</h3>
                 <div>
-                	<p>More Blah Blah</p>
+                	<input onclick="showSecondMarkers();" type="button" value="Show Markers N-Z" />
+                    <input onclick="clearSecondMarkers();" type="button" value="Hide Markers N-Z" />
                 </div>
-                <h3>Markers</h3>
+                <h3>Select buildings from PT1-4</h3>
                 <div>
-                	<input onclick="clearMarkers();" type="button" value="Hide Markers" />
+                	<input onclick="showThirdMarkers();" type="button" value="Show Markers PT1-4" />
+                    <input onclick="clearThirdMarkers();" type="button" value="Hide Markers PT1-4" />
                 </div>
 			</div>
             

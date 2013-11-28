@@ -207,9 +207,5 @@ function BuildNZ()
 		infowindowB.open(map,markerZ);
 	});
 	
-	//Building PT1
-	var markerPT1=new google.maps.Marker({
-		position:BuildPT1,
-		animation: google.maps.Animation.DROP,
-	});
+	
 }

@@ -7,6 +7,11 @@ var BuildPT4=new google.maps.LatLng(-37.97504357608296,145.22158473730087);
 
 function BuildPT14()
 {
+	//Building PT1
+	var markerPT1=new google.maps.Marker({
+		position:BuildPT1,
+		animation: google.maps.Animation.DROP,
+	});
 	
 	markerPT1.setMap(map);
 	
