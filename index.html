@@ -3,31 +3,37 @@
 	<head>
 		<title>Project X</title>
 		<link type="text/css" rel="stylesheet" href="projectX.css"/>
-        <link type="text/css" rel="stylesheet" href="jquery-ui-1.10.3/themes/base/jquery-ui.css"/>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCx27dHarWLiYJvootl6lf2t7W6UOGBoEg&sensor=false"></script>
 		<script type="text/javascript" src="mapData.js"></script>
-    	<script type="text/javascript" src="jQuery.js"></script>
-    	<script type="text/javascript" src="jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="projectX.js"></script>
 	</head>
 	<body>
 		<div id="Wrapper">
 			<div id="Header">
 				<img src="LogoChisholm.jpg" />
 			</div>
-			<div id="Map"></div>
-			<div id="InfoBar">
-				<h4>Select What Buildings You'd Like to Display</h4>
-                  <script type="text/javascript" src="BuildA-M.js"></script>
-				  <input type="submit" name="BuildingA-M" id="BuildingA-M" value="Buildings A-M" onClick="BuildAM()">
-					<br />
-                    <br />
-                    <script type="text/javascript" src="BuildN-Z.js"></script>
-                    <input type="submit" name="BuildingN-Z" id="BuildingN-Z" value="Buildings N-Z" onClick="BuildNZ()">
-                    <br />
-                    <br />
-                    <script type="text/javascript" src="BuildPT1-4.js"></script>
-                    <input type="submit" name="BuildingPT" id="BuildingPT" value="Portables" onClick="BuildPT14()">
+			
+            <div id="Map">
+            </div>
+			
+            <div id="accordion">
+				<h3>This will selection of the types of markers displayed</h3>
+                <div>
+                	<p>This section should expand on click</p>
+                </div>
+                <h3>Blah Blah</h3>
+                <div>
+                	<p>More Blah Blah</p>
+                </div>
+                <h3>Markers</h3>
+                <div>
+                	<input onclick="clearMarkers();" type="button" value="Hide Markers" />
+                </div>
 			</div>
+            
             <div id="MapLegend">
             	<img src="DandenongLayout1.png" width="1050" />
             </div>

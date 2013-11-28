@@ -1,4 +1,4 @@
 // JavaScript Document
 $(document).ready(function() {
-    $('#InfoBar').accordion();
+    $('#accordion').accordion();
 });

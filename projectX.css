@@ -15,11 +15,9 @@
 	height: 500px;
 	text-align: center;
 }
-#InfoBar {
+#accordion {
 	float: right;
-	width: 249px;
-	font-family:Verdana, Geneva, sans-serif;
-	
+	width: 246px;	
 }
 #mapKey {
 	float:right;
