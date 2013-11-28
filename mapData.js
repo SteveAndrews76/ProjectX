@@ -47,19 +47,20 @@ function initialize()
 		mapTypeId:google.maps.MapTypeId.HYBRID
 	};
  	//centering the map, setting how zoomed in and the type of map
- 
- 
-	var map=new google.maps.Map(document.getElementById("Map"),mapProp);
+	
+	map=new google.maps.Map(document.getElementById("Map"),mapProp);
   
 	ChisholmDandenong = new google.maps.GroundOverlay('DandenongLayout2.png', imageBounds);
 	ChisholmDandenong.setMap(map);
 	// Adding the campus overlay
   
+}
+
+function buildAM() {
 	//Building A
 	var markerA=new google.maps.Marker({
 		position:BuildA,
 		animation: google.maps.Animation.DROP,
-		map: map
 	});
 	
 	markersAM.push(markerA);
@@ -74,11 +75,447 @@ function initialize()
 		infowindowA.open(map,markerA);
 	});
 	
+	//Building B
+	var markerB=new google.maps.Marker({
+		position:BuildB,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerB);
+	
+	var infowindowB = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building B</div>"
+	});
+	
+	google.maps.event.addListener(markerB, 'click', function() {
+		infowindowB.open(map,markerB);
+	});
+	
+	//Building C
+	var markerC=new google.maps.Marker({
+		position:BuildC,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerC);
+	
+	var infowindowC = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building C</div>"
+	});
+	
+	google.maps.event.addListener(markerC, 'click', function() {
+		infowindowC.open(map,markerC);
+	});
+	
+	//Building D
+	var markerD=new google.maps.Marker({
+		position:BuildD,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerD);
+	
+	var infowindowD = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building D</div>"
+	});
+	
+	google.maps.event.addListener(markerD, 'click', function() {
+		infowindowD.open(map,markerD);
+	});
+	
+	//Building E
+	var markerE=new google.maps.Marker({
+		position:BuildE,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerE);
+	
+	var infowindowE = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building E</div>"
+	});
+	
+	google.maps.event.addListener(markerE, 'click', function() {
+		infowindowE.open(map,markerE);
+	});
+	
+	//Building F
+	var markerF=new google.maps.Marker({
+		position:BuildF,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerF);
+	
+	var infowindowF = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building F</div>"
+	});
+	
+	google.maps.event.addListener(markerF, 'click', function() {
+		infowindowF.open(map,markerF);
+	});
+	
+	//Building G
+	var markerG=new google.maps.Marker({
+		position:BuildG,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerG);
+	
+	var infowindowG = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building G</div>"
+	});
+	
+	google.maps.event.addListener(markerG, 'click', function() {
+		infowindowG.open(map,markerG);
+	});
+	
+	//Building H
+	var markerH=new google.maps.Marker({
+		position:BuildH,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerH);
+	
+	var infowindowH = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building H</div>"
+	});
+	
+	google.maps.event.addListener(markerH, 'click', function() {
+		infowindowH.open(map,markerH);
+	});
+	
+	//Building J
+	var markerJ=new google.maps.Marker({
+		position:BuildJ,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerJ);
+	
+	var infowindowJ = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building J</div>"
+	});
+	
+	google.maps.event.addListener(markerJ, 'click', function() {
+		infowindowJ.open(map,markerJ);
+	});
+	
+	//Building K
+	var markerK=new google.maps.Marker({
+		position:BuildK,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerK);
+	
+	var infowindowK = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building K</div>"
+	});
+	
+	google.maps.event.addListener(markerK, 'click', function() {
+		infowindowK.open(map,markerK);
+	});
+		
+	//Building L
+	var markerL=new google.maps.Marker({
+		position:BuildL,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerL);
+	
+	var infowindowL = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building L</div>"
+	});
+	
+	google.maps.event.addListener(markerL, 'click', function() {
+		infowindowL.open(map,markerL);
+	});
+	
+	//Building M
+	var markerM=new google.maps.Marker({
+		position:BuildM,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersAM.push(markerM);
+	
+	var infowindowM = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building M</div>"
+	});
+	
+	google.maps.event.addListener(markerM, 'click', function() {
+		infowindowM.open(map,markerM);
+	});
+	
+}
+
+function buildNZ() {
+	//Building N
+	var markerN=new google.maps.Marker({
+		position:BuildN,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerN);
+	
+	var infowindowN = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building N</div>"
+	});
+	
+	google.maps.event.addListener(markerN, 'click', function() {
+		infowindowN.open(map,markerN);
+	});
+	
+	//Building O
+	var markerO=new google.maps.Marker({
+		position:BuildO,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerO);
+	
+	var infowindowO = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building O</div>"
+	});
+	
+	google.maps.event.addListener(markerO, 'click', function() {
+		infowindowO.open(map,markerO);
+	});
+	
+	//Building P
+	var markerP=new google.maps.Marker({
+		position:BuildP,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerP);
+	
+	var infowindowP = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building P</div>"
+	});
+	
+	google.maps.event.addListener(markerP, 'click', function() {
+		infowindowP.open(map,markerP);
+	});
+	
+	//Building Q
+	var markerQ=new google.maps.Marker({
+		position:BuildQ,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerQ);
+	
+	var infowindowQ = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building Q</div>"
+	});
+	
+	google.maps.event.addListener(markerQ, 'click', function() {
+		infowindowQ.open(map,markerQ);
+	});
+	
+	//Building R
+	var markerR=new google.maps.Marker({
+		position:BuildR,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerR);
+	
+	var infowindowR = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building R</div>"
+	});
+	
+	google.maps.event.addListener(markerR, 'click', function() {
+		infowindowR.open(map,markerR);
+	});
+	
+	//Building S
+	var markerS=new google.maps.Marker({
+		position:BuildS,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerS);
+	
+	var infowindowS = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building S</div>"
+	});
+	
+	google.maps.event.addListener(markerS, 'click', function() {
+		infowindowS.open(map,markerS);
+	});
+	
+	//Building T
+	var markerT=new google.maps.Marker({
+		position:BuildT,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerT);
+	
+	var infowindowT = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building T</div>"
+	});
+	
+	google.maps.event.addListener(markerT, 'click', function() {
+		infowindowT.open(map,markerT);
+	});
+	
+	//Building U
+	var markerU=new google.maps.Marker({
+		position:BuildU,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerU);
+	
+	var infowindowU = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building U</div>"
+	});
+	
+	google.maps.event.addListener(markerU, 'click', function() {
+		infowindowU.open(map,markerU);
+	});
+	
+	//Building V
+	var markerV=new google.maps.Marker({
+		position:BuildV,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerV);
+	
+	var infowindowV = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building V</div>"
+	});
+	
+	google.maps.event.addListener(markerV, 'click', function() {
+		infowindowV.open(map,markerV);
+	});
+	
+	//Building W
+	var markerW=new google.maps.Marker({
+		position:BuildW,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerW);
+	
+	var infowindowW = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building W</div>"
+	});
+	
+	google.maps.event.addListener(markerW, 'click', function() {
+		infowindowW.open(map,markerW);
+	});
+	
+	//Building Y
+	var markerY=new google.maps.Marker({
+		position:BuildY,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerY);
+	
+	var infowindowY = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building Y</div>"
+	});
+	
+	google.maps.event.addListener(markerY, 'click', function() {
+		infowindowY.open(map,markerY);
+	});
+	
+	//Building Z
+	var markerZ=new google.maps.Marker({
+		position:BuildZ,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersNZ.push(markerZ);
+	
+	var infowindowZ = new google.maps.InfoWindow({
+		content:"<div class=\"infobox\">Building Z</div>"
+	});
+	
+	google.maps.event.addListener(markerZ, 'click', function() {
+		infowindowB.open(map,markerZ);
+	});
+}
+
+function buildPT() {
+	//Building PT1
+	var markerPT1=new google.maps.Marker({
+		position:BuildPT1,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersPT.push(markerPT1);
+	
+	var infowindowPT1 = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building PT1</div>"
+	});
+	
+	google.maps.event.addListener(markerPT1, 'click', function() {
+		infowindowPT1.open(map,markerPT1);
+	});
+	
+	//Building PT2
+	var markerPT2=new google.maps.Marker({
+		position:BuildPT2,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersPT.push(markerPT2);
+	
+	var infowindowPT2 = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building PT2</div>"
+	});
+	
+	google.maps.event.addListener(markerPT2, 'click', function() {
+		infowindowPT2.open(map,markerPT2);
+	});
+	
+	//Building PT3
+	var markerPT3=new google.maps.Marker({
+		position:BuildPT3,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersPT.push(markerPT3);
+	
+	var infowindowPT3 = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building PT3</div>"
+	});
+	
+	google.maps.event.addListener(markerPT3, 'click', function() {
+		infowindowPT3.open(map,markerPT3);
+	});
+	
+	//Building PT4
+	var markerPT4=new google.maps.Marker({
+		position:BuildPT4,
+		animation: google.maps.Animation.DROP,
+	});
+	
+	markersPT.push(markerPT4);
+	
+	var infowindowPT4 = new google.maps.InfoWindow({
+		content: "<div class=\"infobox\">Building PT4</div>"
+	});
+	
+	google.maps.event.addListener(markerPT4, 'click', function() {
+		infowindowPT4.open(map,markerPT4);
+	});
 }
 
 function setFirstMap(map) {
-	for( var i = 0; i < markers.length; i++) {
-		markersAM[i].setMap(Map);
+	for( var i = 0; i < markersAM.length; i++) {
+		markersAM[i].setMap(map);
 	}
 }
 
@@ -88,16 +525,40 @@ function clearFirstMarkers() {
 
 function showFirstMarkers() {
 	setFirstMap(map);
+	setSecondMap(null);
+	setThirdMap(null);
+}
+
+function setSecondMap(map) {
+	for( var i = 0; i < markersNZ.length; i++) {
+		markersNZ[i].setMap(map);
+	}
 }
 
 function clearSecondMarkers() {
-	
+	setSecondMap(null);
 }
 
 function showSecondMarkers() {
-	
+	setFirstMap(null);
+	setSecondMap(map);
+	setThirdMap(null);
 }
 
+function setThirdMap(map) {
+	for( var i = 0; i < markersPT.length; i++) {
+		markersPT[i].setMap(map);
+	}
+}
 
+function clearThirdMarkers() {
+	setThirdMap(null);
+}
+
+function showThirdMarkers() {
+	setFirstMap(null);
+	setSecondMap(null);
+	setThirdMap(map);
+}
 
 google.maps.event.addDomListener(window, 'load', initialize);
